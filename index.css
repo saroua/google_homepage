@@ -1,0 +1,29 @@
+#toplinks{
+    display: block;
+    float: right;
+    top: 0px;
+}
+#logo-recherche{
+    border: 3px solid green;
+    width: max-content;
+    height: max-content;
+}
+#searchbar{
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+#bottom-nav{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+#bottom-nav-right{
+    float: right;
+    padding-right: 30px;
+}
+#bottom-nav a{
+    display: block;
+    float: left;
+    padding: 10px 15px 10px 15px;
+}
