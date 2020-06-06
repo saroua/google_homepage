@@ -1,3 +1,18 @@
+a{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.7);
+}
+a:hover{
+    text-decoration: underline;
+}
+.langue{
+    color: blue;
+}
+#mid{
+    float: center;
+    border: 1px solid black;
+
+}
 #toplinks{
     display: block;
     float: right;
@@ -17,6 +32,10 @@
     position: fixed;
     bottom: 0px;
     width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0px 20px 0px 0px;
+    margin-bottom: -10px;
+    margin-left: -9px;
 }
 #bottom-nav-right{
     float: right;
@@ -26,4 +45,28 @@
     display: block;
     float: left;
     padding: 10px 15px 10px 15px;
+}
+#recherche{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.bouton{
+    border:none;
+    background: none;
+    padding: 10px;
+    margin: 5px;
+}
+.bouton:hover{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+#luxembourg{
+    position: fixed;
+    width: 100%;
+    bottom: 25px;
+    left: 14px;
+    color:rgba(0, 0, 0, 0.7);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    margin-left: -15px;
+    padding-left: 17px;
 }
