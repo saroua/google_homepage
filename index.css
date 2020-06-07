@@ -1,3 +1,6 @@
+body{
+    min-width: 530px;
+}
 a{
     text-decoration: none;
     color:rgba(0, 0, 0, 0.7);
@@ -8,65 +11,164 @@ a:hover{
 .langue{
     color: blue;
 }
-#mid{
-    float: center;
-    border: 1px solid black;
-
-}
 #toplinks{
-    display: block;
-    float: right;
+    position: absolute;
+    width: 180px;
     top: 0px;
+    right: 0px;
+    margin: 15px 20px 0px 0px;
 }
-#logo-recherche{
-    border: 3px solid green;
-    width: max-content;
-    height: max-content;
+#toplinks a{
+    color:rgba(0, 0, 0, 0.9);
+    font-size: 15px;
+    vertical-align: middle;
+    padding-right: 10px;
 }
-#searchbar{
-    padding-left: 10px;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+#grid{
+    max-width: 22px;
+    height: auto;
+    vertical-align: middle;
+    padding-right: 10px;
 }
-#bottom-nav{
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 0px 20px 0px 0px;
-    margin-bottom: -10px;
-    margin-left: -9px;
+#logo-compte{
+    border-radius: 50%;
+    height: auto;
+    max-width: 35px;
+    vertical-align: middle;
 }
-#bottom-nav-right{
-    float: right;
-    padding-right: 30px;
+#mid{
+    width: 500px;
+    margin: 9% auto 0px auto;
 }
-#bottom-nav a{
-    display: block;
-    float: left;
-    padding: 10px 15px 10px 15px;
-}
-#recherche{
-    margin-left: 5px;
-    margin-right: 10px;
+@media (max-width:530px){
+    #mid{
+        margin-left: -10px;
+    }
 }
 .bouton{
     border:none;
     background: none;
     padding: 10px;
     margin: 5px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.9);
 }
 .bouton:hover{
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 4px;
 }
+.bouton:focus{
+    outline: none !important;
+}
 #luxembourg{
     position: fixed;
     width: 100%;
-    bottom: 25px;
-    left: 14px;
+    bottom: 28px;
+    left: 13px;
     color:rgba(0, 0, 0, 0.7);
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
     margin-left: -15px;
-    padding-left: 17px;
+    padding: 0px 0px 10px 17px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+}
+#bottom-nav{
+    font-size: 16px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0px 20px 10px 0px;
+    margin-bottom: -10px;
+    margin-left: -9px;
+    color: rgba(0, 0, 0, 0.7);
+}
+#bottom-nav-right{
+    float: right;
+    padding-right: 10px;
+}
+#bottom-nav a{
+    display: block;
+    float: left;
+    padding: 10px 15px 10px 15px;
+}
+#settings{
+    padding-right: 105px;
+}
+
+@media (max-width:940px){
+    #settings{
+        display: none;
+    }
+}
+@media (max-width:691px){
+    #bottom-nav{
+        font-size: 12px;
+    }
+    #bottom-nav a{
+        padding-right: 5px;
+        padding-left: 12px;
+    }
+    #luxembourg{
+        padding-left: 12px;
+        font-size: 12px;
+    }
+}
+
+#logo-recherche{
+    display: block;
+    margin: 0px auto;
+}
+#searchbar{
+    width: 500px;
+    border-radius: 50px;
+    height: 34px;
+    display: block;
+    margin: 10px auto;
+    padding: 0px 30px 0px 30px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#searchbar:hover{
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3) ;
+}
+#loupediv{
+    position: relative;
+}
+#loupe{
+    position: absolute;
+    margin: -34px 0px 0px 10px;
+    max-width: 15px;
+    height: auto;
+    opacity: 0.7;
+}
+#micdiv{
+    position: relative;
+
+}
+#mic{
+    position: absolute;
+    margin: -35px 0px 0px 476px;
+    max-width: 12px;
+    height: auto;
+    opacity: 1;
+}
+#bouton-recherche{
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 14px;
+}
+#languedispo{
+    text-align: center;
+    font-size: 14px;
+}
+@media (max-width:600px){
+    #toplinks a{
+        font-size: 13px;
+    }
+    img{
+        transform: scale(0.8);
+    }
 }
